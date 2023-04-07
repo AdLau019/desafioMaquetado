@@ -45,12 +45,111 @@ header{
  
 
  .section__main{
-    background-color: white;
     flex-basis: 40%;
     flex-grow: 1;
     margin-left: 10px;
     margin-right: 10px;
+    padding: 0px;
     width: 500px;
+
+    & .section__main__article {
+      background-color: white;
+      border-radius: 7px;
+      border: solid 1px #dedede;
+      overflow: hidden;
+   
+
+      & .section__main__article__topImage {
+         width: 100%;   
+      }
+      
+      & .section__main__article__content {
+         color: rgba(23, 23, 23, 1);
+         padding: 10px 30px;
+
+         & .author {
+            display: inline-flex;
+
+            & img {
+               border-radius: 50%;
+               height: 40px;
+               width: 40px;
+            }
+
+            & div {
+               margin: auto 15px;
+
+               & a {
+                  color: #717171;
+                  font-weight: bold;
+                  text-decoration: none;
+               }
+   
+               & p {
+                  font-size: .8rem;
+                  margin: 0;
+               }
+            }
+         }
+
+         & .reactions {
+            margin-top: 15px;
+            & span {
+               margin-right: 20px;
+            }
+         }
+         
+         & .title {
+            & h2 {
+               color: black;
+            }
+
+            & .tags {
+               & a {
+                  color: #717171;
+                  margin-right: 20px; 
+                  text-decoration: none;       
+                  }
+               a:nth-of-type(1){
+                  & span {
+                     color: green;
+                  }
+               }
+               a:nth-of-type(2){
+                  & span {
+                     color: yellow;
+                  }
+               }
+               a:nth-of-type(3){
+                  & span {
+                     color: red;
+                  }
+               }
+               a:nth-of-type(4){
+                  & span {
+                     color: blue;
+                  }
+               }
+            }
+
+            & .text {
+
+               & img {
+                  left: 50%;
+                  margin: 15px 0;
+                  position: relative;
+                  transform: translate(-50%);
+                  width: 80%;
+               }
+
+               & .backgrounded_text {
+                  background-color: lightgray;
+                  font-family: 'Courier New';
+               }
+            }
+         }
+      }
+    }
  }
 
 

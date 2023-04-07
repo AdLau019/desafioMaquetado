@@ -38,12 +38,82 @@ header {
 }
 
 .section__main {
-  background-color: white;
   flex-basis: 40%;
   flex-grow: 1;
   margin-left: 10px;
   margin-right: 10px;
+  padding: 0px;
   width: 500px;
+}
+.section__main .section__main__article {
+  background-color: white;
+  border-radius: 7px;
+  border: solid 1px #dedede;
+  overflow: hidden;
+}
+.section__main .section__main__article .section__main__article__topImage {
+  width: 100%;
+}
+.section__main .section__main__article .section__main__article__content {
+  color: rgb(23, 23, 23);
+  padding: 10px 30px;
+}
+.section__main .section__main__article .section__main__article__content .author {
+  display: inline-flex;
+}
+.section__main .section__main__article .section__main__article__content .author img {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+.section__main .section__main__article .section__main__article__content .author div {
+  margin: auto 15px;
+}
+.section__main .section__main__article .section__main__article__content .author div a {
+  color: #717171;
+  font-weight: bold;
+  text-decoration: none;
+}
+.section__main .section__main__article .section__main__article__content .author div p {
+  font-size: 0.8rem;
+  margin: 0;
+}
+.section__main .section__main__article .section__main__article__content .reactions {
+  margin-top: 15px;
+}
+.section__main .section__main__article .section__main__article__content .reactions span {
+  margin-right: 20px;
+}
+.section__main .section__main__article .section__main__article__content .title h2 {
+  color: black;
+}
+.section__main .section__main__article .section__main__article__content .title .tags a {
+  color: #717171;
+  margin-right: 20px;
+  text-decoration: none;
+}
+.section__main .section__main__article .section__main__article__content .title .tags a:nth-of-type(1) span {
+  color: green;
+}
+.section__main .section__main__article .section__main__article__content .title .tags a:nth-of-type(2) span {
+  color: yellow;
+}
+.section__main .section__main__article .section__main__article__content .title .tags a:nth-of-type(3) span {
+  color: red;
+}
+.section__main .section__main__article .section__main__article__content .title .tags a:nth-of-type(4) span {
+  color: blue;
+}
+.section__main .section__main__article .section__main__article__content .title .text img {
+  left: 50%;
+  margin: 15px 0;
+  position: relative;
+  transform: translate(-50%);
+  width: 80%;
+}
+.section__main .section__main__article .section__main__article__content .title .text .backgrounded_text {
+  background-color: lightgray;
+  font-family: "Courier New";
 }
 
 .section__aside {

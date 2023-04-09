@@ -16,6 +16,8 @@ body {
   flex-direction: column;
 }
 header {
+  position: fixed;
+  width: 100%;
   display: flex;
   background-color: white;
   height: 56px;

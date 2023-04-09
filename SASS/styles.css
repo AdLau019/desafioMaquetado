@@ -33,7 +33,7 @@ header {
 }
 
 .section__navlateral {
-  flex-basis: 15%;
+  flex-basis: 30%;
   flex-direction: column;
 }
 
@@ -206,6 +206,10 @@ header {
   top: 0px;
   width: 40px;
 }
+.section__main .section__main__article .section__main__article__content .comments .comments__input textarea {
+  border-radius: 7px;
+  width: 100%;
+}
 .section__main .section__main__article .section__main__article__content .comments .comments__comment {
   display: flex;
   margin: 20px 0;
@@ -308,6 +312,9 @@ header {
 .section__main .section__main__article .section__main__article__content .comments .comments__comment .comments__comment_text .comment__reactions button:hover {
   background-color: #dedede;
   border-radius: 4px;
+}
+.section__main .section__main__article .section__main__article__content .comments .comments__comment .comments__comment_text .comment__reactions button img {
+  width: 13px;
 }
 .section__main .section__main__article .section__main__article__content .subsection__footer {
   display: flex;
